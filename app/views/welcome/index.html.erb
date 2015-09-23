@@ -1,0 +1,35 @@
+<div class="wrapper wrapper_padding clearfix">
+    <div class="col-1 about homepage_content">
+      <h2>About</h2>
+      <hr>
+      <p>
+        After years deep in the trenches of finance, I've been bitten by the itch to build.  This site will showcase some of the projects I'm working on along with a good dollop of my random musing and helpful tips I've picked up over the years.
+      </p>
+      <p>
+        I just finished the web development track at the Startup Institute and am looking for interesting projects to work on as I build my skills.  
+      </p>
+      <p>
+        Long term, I'm looking to get involved in an startup where I can take ownership and apply the diverse web development skills I'm currently picking up.  If this peaks your interest, please contact me!
+      </p>
+    </div>
+    <div class="col-2 homepage_content">
+      <h2>Stuff I've Built</h2>
+      <hr>
+      <h3><a href="#">Project 1</a></h3>
+      <div class="date">Date 1</div>
+      <h3><a href="#">Project 2</a></h3>
+      <div class="date">Date 2</div>
+      <h3><a href="#">Project 3</a></h3>
+      <div class="date">Date 3</div>
+    </div>
+    <div class="col-3 homepage_content">
+      <h2>Stuff I've Written</h2>
+      <hr>
+
+      <% @posts.each do |post| %>
+        <h3><a href="#"><%= link_to post.title, post %></a></h3>
+        <p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
+      <% end %>
+      
+    </div>
+  </div>

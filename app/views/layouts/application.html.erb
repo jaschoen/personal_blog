@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
   <title>Justin Schoen - Developing from the Ground Up</title>
@@ -9,16 +9,25 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<header id="main_navigation" class="clearfix">
-  <a href="index.html" class="name">Justin Schoen</a>
-  <nav>
-    <%= link_to "Articles", posts_path %>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
-  </nav> 
-</header>
+  <header id="main_navigation" class="clearfix">
+    <%= link_to "Justin Schoen", root_path, class: "name" %>
+    <nav>
+      <%= link_to "Articles", posts_path %>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav> 
+  </header>
 
-<%= yield %>
+  <%= yield %>
+
+  <footer id="main_footer">
+    <p class="copyright">&copy; Justin Schoen</p>
+    <nav>
+      <a href="http://twitter.com/jaschoen" target="_blank"><i class="fa fa-twitter"></i></a>
+      <a href="http://github.com/jaschoen" target="_blank"><i class="fa fa-github"></i></a>
+    </nav>
+    
+  </footer>
 
 </body>
 </html>
