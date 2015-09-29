@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'friendly_id', '~> 5.1.0'
+gem 'will_paginate', '~> 3.0.7'
 gem 'rails', '4.2.3'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
