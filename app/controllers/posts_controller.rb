@@ -1,6 +1,7 @@
 class PostsController < ApplicationController
   before_action :find_post, only: [:show, :edit, :update, :destroy]
   def index
+      @posts = Post.all.order("created_at desc")
   end
 
   def new 
@@ -12,7 +13,7 @@ class PostsController < ApplicationController
   
     if @post.save
       redirect_to @post, notice: "article saved"
-    else
+    else 
       render 'new', notice: "Failed to save"
     end
   end
