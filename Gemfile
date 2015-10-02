@@ -18,7 +18,7 @@ gem 'unicorn'
 gem 'mysql2', '~> 0.3.16'
 # gem 'pg'
 # gem 'rails_12factor' 
-gem 'sqlite3'
+# gem 'sqlite3'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
