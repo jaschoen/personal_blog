@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'friendly_id', '~> 5.1.0'
+gem 'puma'
 gem 'will_paginate', '~> 3.0.7'
 gem 'mail_form', '~> 1.5.1'
 gem 'devise', '~> 3.5.2'
@@ -13,6 +14,11 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'pygments.rb', '~> 0.6.0'
 gem 'redcarpet', '~> 3.2.2'
+gem 'unicorn'
+gem 'mysql2', '~> 0.3.16'
+gem 'pg'
+gem 'rails_12factor' 
+gem 'sqlite3'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
@@ -21,12 +27,6 @@ group :development, :test do
   gem 'spring'
 end
 
-group :development do
-  gem 'sqlite3'
-end
 
-group :production do
-  gem 'pg'
-  gem 'rails_12factor'  
-end
+
 
