@@ -15,8 +15,6 @@ gem 'jbuilder', '~> 2.0'
 gem 'pygments.rb', '~> 0.6.0'
 gem 'redcarpet', '~> 3.2.2'
 gem 'unicorn'
-gem 'mysql2', '~> 0.3.16'
-gem 'sqlite3'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
