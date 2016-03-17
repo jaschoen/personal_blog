@@ -16,6 +16,7 @@ gem 'pygments.rb', '~> 0.6.0'
 gem 'redcarpet', '~> 3.2.2'
 gem 'unicorn'
 gem 'sdoc', '~> 0.4.0', group: :doc
+# gem "font-awesome-rails"
 
 group :development, :test do
   gem 'pry'
