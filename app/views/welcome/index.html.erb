@@ -1,34 +1,38 @@
-<div class="wrapper wrapper_padding clearfix">
-    <div class="col-1 about homepage_content">
+<div class="row">
+ <div class="wrapper wrapper_padding clearfix">
+    <div class="col-xs-12 col-sm-5 about homepage_content">
       <h2>About</h2>
       <hr>
       <p>
-        After years deep in the trenches of finance, I've been bitten by the itch to build.  This site will showcase some of the projects I'm working on along with a good dollop of my random musing and helpful tips I've picked up over the years.
-      </p>
-      <p>
-        I just finished the web development track at the Startup Institute and am looking for interesting projects to work on as I build my skills.  
+       After 10 years of immersing myself in finance and statistics, I'm looking to shift gears and focus on building beautiful things that impact the world.  I am deeply curious about technology, with a focus on Ruby and TDD at the moment.  My ideal position is to work on a small motivated team where I can both speed my learning and focus on best practices.
       </p>
       <p>
         Long term, I'm looking to get involved in an startup where I can take ownership and apply the diverse web development skills I'm currently picking up.  If this peaks your interest, please contact me!
       </p>
-    </div>
-    <div class="col-2 homepage_content">
-      <h2>Stuff I've Built</h2>
-      <hr>
 
-      <% @projects.each do |project| %>
-        <h3><a href="#"><%= link_to project.title, project %></a></h3>
-        <p class="date"><%= project.created_at.strftime("%A, %b %d") %></p>
-      <% end %>
     </div>
-    <div class="col-3 homepage_content">
-      <h2>Stuff I've Written</h2>
+    <div class="col-sm-1"></div>
+    <div class="col-xs-12 col-sm-6 homepage_content">
+      <h2>Projects</h2>
       <hr>
+<!-- https://github.com/jaschoen/mentor_mapp_rebuild
+ -->
+        <h3>TicTacToe</h3>
+        <p>Unbeatable Tic Tac Toe using the min-max algorithm.  This command line game was written with a focus on TDD and SOLID design principles.  I'm going to add a UI to make it a frustrating javascript game shortly.</p>
+        <p>Stack: Ruby, RSpec</p>
+        <p><a href="https://github.com/jaschoen/TicTacToe">Source</a></p>
 
-      <% @posts.each do |post| %>
-        <h3><a href="#"><%= link_to post.title, post %></a></h3>
-        <p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
-      <% end %>
-      
+        <h3><a href="http://www.mentormapp.com">MentorMapp</a></h3>
+        <p>MentorMapp is a coach and mentor connecting platform.  Founded by a fellow Startup Institute alum, it seeks to redefine how you connect with mentors in the digital world.  It needs some work, but it was the first site I built and deployed solo.</p>
+        <p>Stack: HTML, CSS, Javascript, Rails  </p>
+        <p>Deployment: git, heroku, google analytics</p>
+        <p><a href="https://github.com/jaschoen/mentor_mapp_rebuild">Source</a></p>
+
+        <h3>NP complete</h3>
+        <p>Test driven command line solver for <a href="https://xkcd.com/287/"><strong>XKCD</strong></a> comic featuring an NP complete problem.</p>
+        <p>Stack: Ruby, RSpec</p>
+        <p> <a href="http://www.github.com/jaschoen/XKCD_np_complete">Source</a> </p> 
     </div>
+
   </div>
+</div>

@@ -4,39 +4,44 @@
   <title>Justin Schoen - Developing from the Ground Up</title>
   <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
 </head>
-<body>
-  <header id="main_navigation" class="clearfix">
-    <%= link_to "Justin Schoen", root_path, class: "name" %>
-    <nav>
-      <%= link_to "Musings", posts_path %>
-      <%= link_to "Projects", projects_path %>
-      <%= link_to "Contact", new_contact_path %>
-      <% if user_signed_in? %>
-        <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
-      <% end %>
-    </nav> 
-  </header>
+  <body>
+    <div class="container">
+      <header id="main_navigation" class="clearfix">
+        <%= link_to "Justin Schoen", root_path, class: "name" %>
+        <nav>
+          <%= link_to "Musings", posts_path %>
+          <%= link_to "Projects", projects_path %>
+          <%= link_to "Contact", new_contact_path %>
+          <% if user_signed_in? %>
+            <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
+          <% end %>
+        </nav> 
+      </header>
 
-  <% if notice %>
-   <p class="notice"><%= notice %></p>
-  <% elsif alert %>
-   <p class="alert"><%= alert %></p>
-  <% end %>  
+      <% if notice %>
+       <p class="notice"><%= notice %></p>
+      <% elsif alert %>
+       <p class="alert"><%= alert %></p>
+      <% end %>  
 
-  <%= yield %>
+      <%= yield %>
 
-  <footer id="main_footer">
-    <p class="copyright">&copy; Justin Schoen</p>
-    <nav>
-      <a href="http://twitter.com/jaschoen" target="_blank"><i class="fa fa-twitter"></i></a>
-      <a href="http://github.com/jaschoen" target="_blank"><i class="fa fa-github"></i></a>
-    </nav>
-    
-  </footer>
+      <footer id="main_footer">
+        <p class="copyright">&copy; Justin Schoen</p>
+        <nav>
+          <a href="http://www.linkedin.com/in/schoenjustin" target="_blank"><i class="fa fa-linkedin"></i></a>
+          <a href="http://github.com/jaschoen" target="_blank"><i class="fa fa-github"></i></a>
+          <a href="http://twitter.com/jaschoen" target="_blank"><i class="fa fa-twitter"></i></a>
+        </nav>
+        
+      </footer>
+    </div>
 
-</body>
+  </body>
 </html>
