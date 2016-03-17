@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'friendly_id', '~> 5.1.0'
-# gem 'puma'
+gem 'puma'
 gem 'will_paginate', '~> 3.0.7'
 gem 'mail_form', '~> 1.5.1'
 gem 'devise', '~> 3.5.2'
@@ -18,7 +18,7 @@ gem 'unicorn'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
-  gem 'byebug'
+  gem 'pry'
   gem 'web-console', '~> 2.0'
   gem 'spring'
 end
